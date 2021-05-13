@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>반응형 웹 연습</title>
+
+<!--  IE9 이하 버전에서 미디어쿼리 동작되도록 import 해줌 -->
+<script type="text/javascript" src="js/respond.min.js"></script>
+
+<!-- 뷰포트 설정 -->
+<mata name="viewport" contents="width=device-width, initial-scale=1.0">
+
+<!-- 외부 스타일 적용 -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body>
+<header>
+<h1><a href="index.html"><img src="images/logo.jpg" width="100%"></a></h1>
+<h4>Welcome To The Heaven</h4>
+
+<ul id="menu">
+	<li id="li1"><a href="puppy.html">Puppy</a>
+	<li id="li2"><a href="cat.html">Cat</a>
+	<li id="li3"><a href="snack.html">Snack</a>
+	<li id="li4"><a href="acc.html">Accessory</a>
+	<li id="li5"><a href="qna.html">QnA</a>
+	<li id="li6"><a href="adr.html">Adress</a>
+</ul>
+
+
+<div class="snsSet">
+	<a href="http://www.facebook.com" target="_blank"><img src="images/sns1.jpg"></a>
+	<a href="https://www.instagram.com/" target="_blank"><img src="images/sns2.jpg"></a>
+	<a href="https://www.naver.com/" target="_blank"><img src="images/sns3.jpg"></a>
+	<a href="https://www.kakaocorp.com/" target="_blank"><img src="images/sns4.jpg"></a>
+	<a href="https://www.naver.com/" target="_blank"><img src="images/sns5.jpg"></a>
+	<!-- 이미지 크기 50*50 -->
+</div>
+</header>
+
+<nav>
+		<a href="qna.html"><img src="images/nav1.jpg"></a>
+		<a href="qna.html"><img src="images/nav2.jpg"></a>
+		<a href="qna.html"><img src="images/nav3.jpg"></a>
+		<a href="qna.html"><img src="images/nav4.jpg"></a>
+		<a href="adr.html"><img src="images/nav5.jpg"></a>
+
+		<!-- 이미지 크지 30*30 -->
+</nav>
+<section>
+<article style="background-color: white; margin-left: 200px">						
+		<h2 style="font-size: 50px; text-align:center; height: 100px; margin-left: 100px;">찾아오시는 길</h2>
+		<hr>
+		<h2 style="font-size: 30px; height: 10px; ">Pet Store</h2>
+		<div style="margin-top:50px; width:100%; height:250px;">
+		<script src="http://code.jquery.com/jquery-lastest.js"></script>
+		<!-- CND 이용 jQuery -->
+		<!-- Google Map -->
+		<div id="googleMap" style="width: 100%; height: 380px; border-radius:20px;">
+		</div>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		function initialize(){
+			var mapProp = {
+					center: new google.maps.LatLng(37.568069386053516, 126.9822020242715),
+					zoom: 12,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+		 var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		</div>
+		
+		
+
+		<h2 style="margin-top:180px;"> 주소: 서울특별시 중구 다동 88 동아빌딩 15층 </h2>
+
+
+</artcle>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,616 @@
+/* 웹 폰트 부분 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap');
+
+
+
+
+/* reset 부분 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	outline: 0;
+	text-decoration: none;
+	color: #555;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+img {
+	border: 0;	
+}
+
+h1 {
+	width: 90%;
+	margin: 15px auto 5px auto;
+}
+
+h4 {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Satisfy';
+	color: black;
+	font-size: 20pt;
+	text-align: center;
+	letter-spacing: 0.1em;						/* 단어 사이 */
+	transition: all 1s;
+	animation: ani1 3s;
+}
+
+@keyframes ani1{
+	0% {
+		color: white;
+	}
+	40% {
+		color: orange;
+	}
+	50% {
+		color: brown;
+	}
+	70% {
+		color: yellow;
+	}
+	100% {
+		color: #1c8dff;
+	}
+}
+
+#menu {
+	position: relative;
+	top: 17%;
+	left: 0;
+}
+
+#menu li {
+	text-align: center;
+}
+
+#menu li a, #menu li a:active {
+	display: inline-block;
+	width: 100%;
+	line-height: 2.0;
+	font-size: 24px;
+	color: Black;
+	letter-spacing: 0.1em;
+	font-family: 'Arima Madurai';
+}
+
+
+
+#li1:hover a{
+	font-size: 24px;
+	background-color: #50a6ed;
+	color: white;
+}
+
+#li2:hover a{
+	font-size: 24px;
+	color: white;
+	background-color: #fe96ee;
+}
+
+#li3:hover a{
+	font-size: 24px;
+	background-color: #ffa54a;
+	color: white;
+}
+
+#li4:hover a{
+	font-size: 24px;
+	background-color: #f7e944;;
+	color: white;
+}
+
+#li5:hover a{
+	font-size: 24px;
+	background-color: black;
+	color: white;
+	
+}
+
+#li6:hover a{
+	font-size: 24px;
+	background-color: #f76262;
+	color: white;
+}
+
+
+.snsSet {
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.snsSet a {
+	display: inline-block;
+}
+
+
+body {
+	font: 12px/1.6 'Open Sans';
+	color: #555;
+}
+
+header {
+	position: fixed;
+	width: 15%;
+	height: 100%;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+}
+nav {
+	position: relative;
+	width: 85%;
+	height: 35px;
+	background-color: white;
+	margin-left: 15%;
+	transition: all 0.5s;
+}
+
+nav a {
+	float: right;
+	margin: 0 5px;
+}
+
+nav a img {
+	float: right;
+}
+
+section {
+	width: 85%;
+	position: relative;
+	margin-left: 15%;
+}
+
+article {
+	float: left;
+	height: 260px;
+	transition: all 1s;
+	animation: scale 1s;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0); /* 없음 */
+	}
+	100% {
+		transform: scale(1); /* 100% 자기 자신의 사이즈 */
+	}
+}
+
+/* 각 박스 크기 지정 */
+article:nth-child(1) { width: 60%; height: 520px; background-color: #ddd; }
+article:nth-child(2) { width: 40%; background-color: #ccc; }
+article:nth-child(3) { width: 20%; background-color: #bbb; }
+article:nth-child(4) { width: 20%; background-color: #aaa; }
+article:nth-child(5) { width: 20%; background-color: #999; }
+article:nth-child(6) { width: 40%; background-color: #888; }
+article:nth-child(7) { width: 20%; background-color: #777; }
+article:nth-child(8) { width: 20%; background-color: #666; }
+article:nth-child(9) { width: 40%; background-color: #555; }
+article:nth-child(10) { width: 20%; background-color: #444; }
+article:nth-child(11) { width: 20%; background-color: #333; }
+article:nth-child(12) { width: 20%; background-color: #222; }
+
+
+
+
+#btn1{
+	position: relative;
+	top: 200px;
+	width: 80%;
+	height: 35px;
+	text-align: center;
+	padding-top: 15px;
+	background-color: white;
+	opacity: 0.5;					/* 반투명으로 */
+	border-radius: 10px;			/* 테두리가 동글.. 숫가커질수록 더 똥글 */
+	margin: 0 auto;					/* 가운데 정렬 */
+	font-size: 15px;
+}
+
+#btn1:hover{
+	color: white;
+
+}
+
+
+
+/****************** 배경 이미지 넣기 *********************/
+.bg1 {
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
+}
+
+.bg2 {
+	background-image: url('../images/bg2.jpg');
+	background-size: cover;
+}
+
+.bg3 {
+	background-image: url('../images/bg3.jpg');
+	background-size: cover;
+}
+
+.bg4 {
+	background-image: url('../images/bg4.jpg');
+	background-size: cover;
+}
+
+
+.bg5 {
+	background-image: url('../images/bg5.jpg');
+	background-size: cover;
+}
+
+.bg6 {
+	background-image: url('../images/bg6.jpg');
+	background-size: cover;
+}
+
+
+
+/******************* 이미지 박스 호버 효과 *****************/
+
+
+
+/******************* 텍스트 박스 *****************/
+
+.txt3 {
+	background-color: #50a6ed;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt3:hover{
+	background-color: #94c9f3;
+	color: black;
+}
+
+.txt3 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt3 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+
+
+.txt4 {
+	background-color: #fe96ee;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt4:hover{
+	background-color: #febcf4;
+	color: black;
+}
+
+.txt4 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt4 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+.txt5 {
+	background-color: #ffa54a;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt5:hover{
+	background-color: #ffbe7d;
+	color: black;
+}
+
+.txt5 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt5 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+
+.txt6 {
+	background-color: #f7e944;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt6:hover{
+	background-color: #fbf4a2;
+	color: black;
+}
+
+.txt6 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt6 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+
+.txt7 {
+	background-color: white;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt7:hover{
+	background-color: black;
+	color: white;
+}
+
+.txt7 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt7 span:hover{
+
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color:white;
+	
+}
+
+.txt7 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+
+.txt8 {
+	background-image: url('../images/img_home.jpg');
+	background-size: cover;
+	color: black;
+	height: 100%;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.txt8:hover{
+	background-image: url('../images/img_home.jpg');
+	background-size: cover;
+	opacity: 0.8;
+	color: black;
+}
+
+.txt8 span{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.txt8 p{
+	position: relative;
+	left: 25px;
+	top:50px;
+}
+
+
+/******************* 반응형 부분 **********************/
+/* 900~1300px 사이에 적용 */
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+	header {
+		display: none;
+		/*
+		position: relative;
+		width: 100%;
+		height: 80px;
+		*/
+	}
+	nav {
+		margin-left: 0%;
+		width: 100%;
+	}
+	section {
+		margin-left: 0%;
+		width: 100%;
+	}
+	
+	/* 각 박스 크기 지정 */
+	article:nth-child(1) { width: 75%; }
+	article:nth-child(2) { width: 25%; }
+	article:nth-child(3) { width: 25%; }
+	article:nth-child(4) { width: 25%; }
+	article:nth-child(5) { width: 25%; }
+	article:nth-child(6) { width: 50%; }
+	article:nth-child(7) { width: 50%; }
+	article:nth-child(8) { width: 25%; }
+	article:nth-child(9) { width: 25%; }
+	article:nth-child(10) { width: 50%; }
+	article:nth-child(11) { width: 25%; }
+	article:nth-child(12) { width: 25%; }
+}
+
+/* 780~1023px 사이에 적용 */
+@media screen and (min-width: 780px) and (max-width: 1023px) {
+	header {
+		display: none;
+		position: relative;
+		width: 100%;
+		height: 80px;
+	}
+	nav {
+		margin-left: 0%;
+		width: 100%;
+	}
+	section {
+		margin-left: 0%;
+		width: 100%;
+	}
+	
+	/* 각 박스 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 400px; }
+	article:nth-child(2) { width: 66.6666%; }
+	article:nth-child(3) { width: 33.3333%; }
+	article:nth-child(4) { width: 33.3333%; display: none; }
+	article:nth-child(5) { width: 33.3333%; }
+	article:nth-child(6) { width: 66.6666%; }
+	article:nth-child(7) { width: 66.6666%; display: none; }
+	article:nth-child(8) { width: 33.3333%; }
+	article:nth-child(9) { width: 33.3333%; }
+	article:nth-child(10) { width: 33.3333%; display: none; }
+	article:nth-child(11) { width: 33.3333%; }
+	article:nth-child(12) { width: 33.3333%; display: none; }
+}
+
+/* 640~779px 사이에 적용 */
+@media screen and (min-width: 640px) and (max-width: 779px) {
+	header {
+		display: none;
+		position: relative;
+		width: 100%;
+		height: 80px;
+	}
+	nav {
+		margin-left: 0%;
+		width: 100%;
+	}
+	section {
+		margin-left: 0%;
+		width: 100%;
+	}
+	
+	/* 각 박스 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 400px; }
+	article:nth-child(2) { width: 100%; }
+	article:nth-child(3) { width: 33.3333%; display: none; }
+	article:nth-child(4) { width: 33.3333%; display: none; }
+	article:nth-child(5) { width: 50%; }
+	article:nth-child(6) { width: 50%; }
+	article:nth-child(7) { width: 66.6666%; display: none; }
+	article:nth-child(8) { width: 50%; }
+	article:nth-child(9) { width: 50%; }
+	article:nth-child(10) { width: 33.3333%; display: none; }
+	article:nth-child(11) { width: 50%; }
+	article:nth-child(12) { width: 50%; }
+}
+
+/* 480~639px 사이에 적용 */
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	header {
+		display: none;
+		position: relative;
+		width: 100%;
+		height: 130px;
+	}
+	nav {
+		display: none;
+	}
+	section {
+		margin-left: 0%;
+		width: 100%;
+	}
+	article {
+		height: 150px;
+	}
+	
+	/* 각 박스 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 300px; }
+	article:nth-child(2) { width: 100%; }
+	article:nth-child(3) { width: 33.3333%; display: none; }
+	article:nth-child(4) { width: 33.3333%; display: none; }
+	article:nth-child(5) { width: 50%; }
+	article:nth-child(6) { width: 50%; }
+	article:nth-child(7) { width: 66.6666%; display: none; }
+	article:nth-child(8) { width: 50%; }
+	article:nth-child(9) { width: 50%; }
+	article:nth-child(10) { width: 33.3333%; display: none; }
+	article:nth-child(11) { width: 50%; }
+	article:nth-child(12) { width: 50%; }
+}
+
+/* ~479px 사이에 적용 */
+@media screen and (max-width: 479px) {
+	header {
+		display: none;
+		position: relative;
+		width: 100%;
+		height: 80px;
+	}
+	nav {
+		display: none;
+	}
+	section {
+		margin-left: 0%;
+		width: 100%;
+	}
+	article {
+		height: 150px;
+	}
+	
+	/* 각 박스 크기 지정 */
+	article:nth-child(1) { width: 100%; height: 400px; }
+	article:nth-child(2) { width: 100%; }
+	article:nth-child(3) { width: 33.3333%; display: none; }
+	article:nth-child(4) { width: 33.3333%; display: none; }
+	article:nth-child(5) { width: 50%; }
+	article:nth-child(6) { width: 50%; }
+	article:nth-child(7) { width: 66.6666%; display: none; }
+	article:nth-child(8) { width: 50%; display: none; }
+	article:nth-child(9) { width: 50%; display: none; }
+	article:nth-child(10) { width: 33.3333%; display: none; }
+	article:nth-child(11) { width: 50%; display: none; }
+	article:nth-child(12) { width: 50%; display: none; }
+}
+
