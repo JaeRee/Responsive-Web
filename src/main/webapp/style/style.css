@@ -448,8 +448,19 @@ article:nth-child(12) { width: 20%; background-color: #222; }
 
 /******************게시판 부분************************/
 
+.board_list_wrap table{
+	font-size:20px;margin-left:10%; margin-bottom: 100px;
+}
 
+.board_list_wrap table caption{
+	font-size:30px; margin-left:5%; margin-bottom:20px;
+	} 
 
+.board_list_wrap tbody{
+	
+		text-align: center;
+	
+}
 
 /******************* 반응형 부분 **********************/
 /* 900~1300px 사이에 적용 */
