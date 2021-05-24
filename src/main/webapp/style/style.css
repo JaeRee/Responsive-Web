@@ -450,6 +450,8 @@ article:nth-child(12) { width: 20%; background-color: #222; }
 
 .board_list_wrap table{
 	font-size:20px;margin-left:10%; margin-bottom: 100px;
+	
+	
 }
 
 .board_list_wrap table caption{
